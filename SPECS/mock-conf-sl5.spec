@@ -2,8 +2,8 @@
 
 Summary:	Mock configs for SL5
 Name:		mock-conf-sl5
-Version:	1
-Release:	2.vortex%{?dist}
+Version:	2
+Release:	1.vortex%{?dist}
 Vendor:		Vortex RPM
 License:	GPLv3
 Group:		Development/Tools
@@ -36,6 +36,10 @@ rm -rf %{buildroot}
 %config(noreplace) %{_sysconfdir}/mock/sl-5-i386.cfg
 
 %changelog
+* Tue Nov 22 2011 Ilya A. Otyutskiy <sharp@thesharp.ru> - 2-1.vortex
+- It's time to hit v2, I believe.
+- Fix vortex-noarch baseurl in x86_64 config.
+
 * Sat Nov 19 2011 Ilya A. Otyutskiy <sharp@thesharp.ru> - 1-2.vortex
 - Fix files ownership.
 - Move from custom mirrorlist to official baseurl.
